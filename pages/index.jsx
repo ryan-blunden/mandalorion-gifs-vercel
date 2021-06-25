@@ -64,7 +64,7 @@ export default function Index({ gif, config }) {
         <div className="container mt-3 text-white-50">
           <div className="mt-5 row justify-content-center">
             <div className="col-sm-12 col-lg-6">
-              {config.DEBUG && (
+              {config.DEBUG_CONFIG && (
                 <div className="app-config-secrets">
                   <h2 className="h5 mb-3 text-white border-bottom pb-1">Debug Mode: App Config & Secrets</h2>
                   {!config.DOPPLER_PROJECT && !config.DOPPLER_CONFIG && (
@@ -190,7 +190,7 @@ export async function getServerSideProps() {
         GIPHY_API_KEY_SET: Boolean(Config.GIPHY_API_KEY),
         GIPHY_TAG: Config.GIPHY_TAG,
         GIPHY_RATING: Config.GIPHY_RATING,
-        DEBUG: Config.DEBUG,
+        DEBUG_CONFIG: Config.DEBUG_CONFIG
       },
     },
   }

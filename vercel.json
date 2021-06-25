@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "pages/api/index.js": {
+      "includeFiles": "pages/api/gifs.json"
+    }
+  }
+}
